@@ -1,0 +1,18 @@
+.juridica {
+    margin: 7.5rem auto 5.3rem;
+}
+
+.juridica > article p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.juridica ~ .blue-strip {
+    padding: 2.3rem 0;
+    margin-bottom: 30vh;
+}
+
+.juridica ~ .apresentacoes {
+    margin-top: 0;
+    margin-bottom: 30vh;
+}

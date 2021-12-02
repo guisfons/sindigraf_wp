@@ -13,7 +13,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="publisher" content="contato@okngroup.com.brr">
+	<meta name="publisher" content="guilhermesfonsecaa@gmail.com">
+	
 	<?php
 
 		get_template_part('template-parts/header/seo');
@@ -29,46 +30,52 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 	<!-- Assets -->
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css.map"> -->
 
 
 	<!-- Helpers -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/cdn/Helpers.css">
-	<!--
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/cdn/Message.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/cdn/OKNPagination.css">
-	-->
 
 	<!-- Must Have -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/app.js"></script>
 
-	<script>
-		let app = new App ({
-			host : window.location.protocol + '//' + window.location.host + '/',
-			// You can define default instances or vendors to load in every page filling this next parameters
-			vendors : [
-                'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',
-                'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js',
-				'<?php echo get_template_directory_uri(); ?>/assets/cdn/Helpers.js'
-			],
-			instances : []
-		});
-	</script>
-
 </head>
 
 <body <?php body_class($post->post_name ?? ''); ?>>
-	<?php
-		get_template_part('inc/analytics/analytics-noscript');
-		get_template_part('template-parts/navigation/menu');
-	?>
+	<header class="header">
+		<div class="header-menu__mobile">
+		<div class="wrapper">
+			<span class="header-menu-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/menu.svg" alt=""></span>
+
+			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter-mobile.svg" alt=""></a>
+			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/youtube-mobile.svg" alt=""></a>
+			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/facebook-mobile.svg" alt=""></a>
+		</div>
+		</div>
+		<div class="wrapper header-menu__top">
+		<div class="header-top">
+			<p class="header-brand-text">Portal da Indústria Gráfica Paulista. Juntos somos mais fortes!</p>
+			<a href="#" class="header-login">Login <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/User.svg" alt=""></a>
+		</div>
+		<div class="header-bottom">
+			<div class="header-brand">
+			<img class="image-abigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-abigraf-sp.png" alt="">
+			<img class="image-sidigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-sidigraf.png" alt="">
+			<img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-mobile.png" alt="">
+			</div>
+			<form action="#" method="post" class="form">
+			<div class="form-box">
+				<input class="form-text" id="search" type="text" name="search" placeholder="O que você busca?">
+				<button class="form-submit" type="submit">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/Search.svg" alt="" srcset="">
+				</button>
+			</div>
+			</form>
+		</div>
+		</div>
+		<?php echo 		get_template_part('template-parts/navigation/menu'); ?>
+	</header>

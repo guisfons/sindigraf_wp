@@ -1,11 +1,8 @@
-
-
-/* Modal.ga
-
 .modal {
     width: 84.58%;
+}
 
-}leria { */
+.galeria {
     display: flex;
     flex-wrap: wrap;
     column-gap: 3rem;
@@ -23,7 +20,8 @@
 .galeria-card figure {
     max-width: 35rem;
     width: 100%;
-    height: 20rem;
+    min-height: 20rem;
+    max-height: 20rem;
     margin: 0 auto;
 }
 
@@ -37,6 +35,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
+    height: 100%;
 }
 
 .galeria-card-date {
@@ -52,10 +51,13 @@
 }
 
 .galeria-card-link {
+    width: fit-content;
     font-size: 1.4rem;
     color: #FA5B37;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
+    margin-top: auto;
 }
 
 @media (max-width: 900px) {    
@@ -68,7 +70,7 @@
 /* Modal */
 
 .modal {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 
@@ -87,7 +89,11 @@
     font-weight: 700;
     color: #fff;
     
-    z-index: 1;
+    z-index: 9;
+}
+
+.modal--active {
+    display: flex;
 }
 
 .modal-close {
@@ -115,30 +121,49 @@
     -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
- 
-.modal-arrow-before, .modal-arrow-after {
-    cursor: pointer;
-}
 
-.modal-arrow-before {
+.modal .slick-arrow {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    left: 3rem;
+
+    background-color: transparent;
+    background-image: url(../../images/icons/modal-arrow.svg);
+    background-size: contain;
+
+    width: 3.188rem;
+    height: 5.075rem;
+    border: none;
+
+    font-size: 0;
+    z-index: 2;
+}
+
+.modal .slick-prev {
+    left: -6rem;
     transform: translateY(-50%);
 }
 
-.modal-arrow-after {
-    position: absolute;
-    top: 50%;
-    right: 3rem; 
+.modal .slick-next {
+    right: -6rem; 
     transform: translateY(-50%) rotate(-180deg);
 }
 
-.modal-paginacao {
+.modal-paginacao{
     margin: 3.7rem auto 3.6rem;
 }
 
+.modal-slider .slick-dots li button {
+    border: none;
+    background-color: transparent;
+}
+
+
 @media (max-width: 900px) {
+    .modal {    
+        padding: 2rem;
+    }
+
     .modal-close {
         top: 1rem;
         right: 1rem;
@@ -149,7 +174,19 @@
         width: 100%;
     }
 
+    .modal-slider img {
+        height: 30vh;
+    }
+
     .modal-arrow-before, .modal-arrow-after {
         width: 3rem;
+    }
+
+    .modal .slick-prev {
+        left: 2rem;
+    }
+    
+    .modal .slick-next {
+        right: 2rem;
     }
 }

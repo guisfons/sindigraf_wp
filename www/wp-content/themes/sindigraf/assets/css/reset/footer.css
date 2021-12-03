@@ -151,6 +151,7 @@ a.footer-social-media {
 
     .news-content {
         flex-direction: column;
+        align-items: center;
         padding: 0; 
     }
 
@@ -161,6 +162,10 @@ a.footer-social-media {
         display: flex;
     }
 
+    .news-form p {
+        justify-content: center;
+    }
+
     .news-email {
         width: 100%;
         height: 37px;
@@ -169,6 +174,10 @@ a.footer-social-media {
     .news-submit {
         height: 37px;
         background-color: #1890FF;
+    }
+
+    .wpcf7-form-control-wrap {
+        width: 100%;
     }
 
     footer.footer {
@@ -230,6 +239,10 @@ a.footer-social-media {
 @media (max-width: 450px) {
     .news-form {
         flex-direction: column;
+    }
+
+    .news-form p {
+        flex-wrap: wrap;
     }
 
     .news-submit {

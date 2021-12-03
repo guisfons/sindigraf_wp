@@ -83,6 +83,11 @@
     margin: 7.4rem auto;
 }
 
+.formulario-container--active .formulario-form {
+    height: fit-content;
+    opacity: 1;
+}
+
 .formulario-tab {
     background-color: #4299E9;
     padding: 2.4rem 3.3rem;
@@ -100,6 +105,9 @@
     margin-top: 3.5rem;
     row-gap: 3rem;
     column-gap: 3rem;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 
@@ -114,6 +122,18 @@
 
 .formulario-form span {
     font-size: 1.2rem;
+}
+
+.formulario-container .formulario-tab-button::after {
+    content: '+';
+    font-size: 2.1rem;
+    transition: .3s all;
+}
+
+.formulario-container--active .formulario-tab-button::after {
+    content: '-';
+    font-size: 2.1rem;
+    transition: .3s all;
 }
 
 .input-send {

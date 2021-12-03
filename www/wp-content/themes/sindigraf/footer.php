@@ -1,4 +1,3 @@
-
     <footer class="footer">
         <div class="newsletter">
             <div class="news-content wrapper">
@@ -52,7 +51,7 @@
         </div>
     </footer>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
 </body>
 </html>

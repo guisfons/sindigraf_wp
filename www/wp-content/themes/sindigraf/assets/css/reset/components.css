@@ -498,7 +498,7 @@
     display: flex;
 }
 
-.paginacao-numeros a {
+.paginacao-numeros a, .paginacao-numeros span {
     width: 2.4rem;
     height: 2.4rem;
     display: flex;
@@ -508,7 +508,7 @@
     color: #000;
 }
 
-.paginacao-numeros .paginacao-numero--active {
+.page-numbers.current {
     color: #FA5B37; 
     box-shadow: inset 0px 0px 0px 1px #FA5B37;
     border-radius: .2rem;

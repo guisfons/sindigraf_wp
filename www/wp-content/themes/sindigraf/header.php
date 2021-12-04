@@ -34,14 +34,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 
-
-	<!-- Helpers -->
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/cdn/Helpers.css">
-
-	<!-- Must Have -->
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/app.js"></script>
 
 </head>
 
@@ -67,9 +60,9 @@
 			<img class="image-sidigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-sidigraf.png" alt="">
 			<img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-mobile.png" alt="">
 			</div>
-			<form action="#" method="post" class="form">
+			<form action="<?php echo home_url(); ?>" method="get" class="form">
 			<div class="form-box">
-				<input class="form-text" id="search" type="text" name="search" placeholder="O que você busca?">
+				<input class="form-text" id="search" type="text" name="s" placeholder="O que você busca?">
 				<button class="form-submit" type="submit">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/Search.svg" alt="" srcset="">
 				</button>
@@ -77,5 +70,5 @@
 			</form>
 		</div>
 		</div>
-		<?php echo 		get_template_part('template-parts/navigation/menu'); ?>
+		<?php echo get_template_part('template-parts/navigation/menu'); ?>
 	</header>

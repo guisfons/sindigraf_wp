@@ -12,8 +12,8 @@
 get_header();
 
     while ( have_posts() ) : the_post();
-        $post->post_content = apply_filters( 'the_content', $post->post_content );
-        get_template_part('template-parts/post/content');
+    $post->post_content = apply_filters( 'the_content', $post->post_content );
+        get_template_part('template-parts/post/content', $post->post_type);
     endwhile;
     wp_reset_postdata();
 

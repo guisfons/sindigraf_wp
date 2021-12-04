@@ -1,6 +1,8 @@
 .slider-item {
     width: 100%;
     max-height: 55rem;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .associe-title {
@@ -229,7 +231,7 @@
     text-align: center;
     color: #fff;
     opacity: 0;
-    transition: 2s all;
+    transition: .3s all;
 }
 
 .boxes:hover .box-parag {

@@ -3,6 +3,29 @@ $(document).ready(function (){
         $('.nav').toggle();
     });
 
+    // Slider Home
+    $('.main-slider').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    })
+
+    $('.eventos-box').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+
+        responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+        ]
+    })
+
     $('.formulario-tab').on('click', function () {
         $('.formulario-container').toggleClass('formulario-container--active');
     });
@@ -35,4 +58,6 @@ $(document).ready(function (){
         let ativoItem = $('.modal--active .modal-slider .slick-current').data('item');
         $('.modal--active .modal-paginacao-item--active').text('0'+ativoItem);
     });
+
+    $('.telefone').mask('(00)00000-0000');
 })

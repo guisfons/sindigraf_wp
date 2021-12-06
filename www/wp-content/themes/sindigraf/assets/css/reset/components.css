@@ -11,12 +11,40 @@
 .eventos-box {
     display: flex;
     justify-content: space-evenly;
+    max-width: 92.1rem;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .evento-header {
     background-color: #FA5B37;
     width: 100%;
     padding: 1.5rem 2rem;
+}
+
+.eventos .slick-arrow {
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    
+    background-image: url(../../images/icons/arrow-eventos.svg);
+    background-size: contain;
+    width: 2.55rem;
+    height: 4.06rem;
+    
+    position: absolute;
+    top: 50%;
+}
+
+.eventos .slick-prev {
+    left: -7rem;
+    transform: translateY(-50%);
+}
+
+.eventos .slick-next {
+    right: -7rem;
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .evento-item {
@@ -27,6 +55,8 @@
     -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
     -moz-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+    margin-right: 3.1rem;
+    margin-bottom: 2rem;
 }
 
 .evento-date {
@@ -72,6 +102,10 @@
     padding-bottom: 10rem;
 }
 
+@media (max-width: 900px) {
+    
+}
+
 /* Inputs */
 
 .input {
@@ -113,6 +147,10 @@
 .input-select {
     position: relative;
     width: 100%;
+}
+
+.input-select br {
+    display: none;
 }
 
 .input-select select{

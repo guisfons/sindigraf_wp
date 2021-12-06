@@ -15,24 +15,36 @@ get_header();
 </aside>
 <main>
     <section class="wrapper apresentacoes">
-        <div class="apresentacoes-card">
-            <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/document.svg" alt=""></figure>
-            <article>
-                <span>19/11/2014</span>
-                <p>Análise dos Custos para Implantação de uma Nova Tecnologia, Digital ou Convencional</p>
-            </article>
-            <a href="">Baixar</a>
-        </div>
+        <?php
+            if( have_rows('card_apresentacoes') ):
+                while( have_rows('card_apresentacoes') ) : the_row();
+                ?>
+                <div class="apresentacoes-card">
+                    <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/document.svg" alt=""></figure>
+                    <article>
+                        <span><?php echo get_sub_field('data'); ?></span>
+                        <p><?php echo get_sub_field('titulo'); ?></p>
+                    </article>
+                    <a target="_blank" href="<?php echo get_sub_field('arquivo'); ?>" download>Baixar</a>
+                </div>
+                <?php
+                endwhile;
+            endif;
+        ?>
         <div class="paginacao">
-            <span class="paginacao-before"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow-paginacao.svg" alt=""></span>
             <div class="paginacao-numeros">
-                <a class="paginacao-numero paginacao-numero--active" href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
+                <?php
+                $big = 999999999;
+                echo paginate_links(array(
+                    'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+                    'format' => '?paged=%#%',
+                    'current' => max(1, get_query_var('paged')),
+                    'total' => $wp_query->max_num_pages,
+                    'prev_text' => '<span class="paginacao-before"><img src="' . get_template_directory_uri() . '/assets/images/icons/arrow-paginacao.svg" alt=""></span>',
+                    'next_text' => '<span class="paginacao-after"><img src="' . get_template_directory_uri() . '/assets/images/icons/arrow-paginacao.svg" alt=""></span>',
+                ));
+                ?>
             </div>
-            <span class="paginacao-after"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow-paginacao.svg" alt=""></span>
         </div>
     </section>
 </main>

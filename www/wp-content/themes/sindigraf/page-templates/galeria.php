@@ -26,27 +26,40 @@ get_header();
         </div>
     </section>
     <section class="wrapper galeria">
-        <div class="galeria-card">
-            <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/galeria-sample.png" alt=""></figure>
-            <article>
-                <span class="galeria-card-date">09/12/2019</span>
-                <p class="galeria-card-texto">Confraternização da Indústria Gráfica 2019 </p>
-                <span class="galeria-card-link">Ver todas +</span>
-            </article>
-            <div class="modal">
-                <span class="modal-close"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cross.svg" alt=""></span>
-                <h3>Ciclo de Palestras de Gestão e Tecnologia</h3>
-                <div class="modal-slider">
-                    <img data-item="1" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/modal-img.png" alt="">
-                    <img data-item="2" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/modal-img.png" alt="">
-                    <img data-item="3" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/modal-img.png" alt="">
-                    <img data-item="4" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/modal-img.png" alt="">
+    <?php
+        if( have_rows('galeria') ):
+            $counter = 1;
+            while( have_rows('galeria') ) : the_row();
+            ?>
+                <div class="galeria-card">
+                    <figure><img src="<?php echo get_sub_field('imagem_principal'); ?>" alt=""></figure>
+                    <article>
+                        <span class="galeria-card-date"><?php echo get_sub_field('data'); ?></span>
+                        <p class="galeria-card-texto"><?php echo get_sub_field('titulo'); ?></p>
+                        <span class="galeria-card-link">Ver todas +</span>
+                    </article>
+                    <div class="modal">
+                        <span class="modal-close"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cross.svg" alt=""></span>
+                        <h3><?php echo get_sub_field('titulo'); ?></h3>
+                        <div class="modal-slider">
+                        <?php 
+                            $images = get_sub_field('galeria_slider');
+                            if( $images ): ?>
+                                <?php foreach( $images as $image ): ?>
+                                    <img data-item="<?php echo $counter; ?>" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
+                        <div class="modal-paginacao">
+                            <span class="modal-paginacao-item--active">01</span><span class="modal-paginacao-item">/04</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-paginacao">
-                    <span class="modal-paginacao-item--active">01</span><span class="modal-paginacao-item">/04</span>
-                </div>
-            </div>
-        </div>
+            <?php
+            $counter++;
+            endwhile;
+        endif;
+        ?>
     </section>
     <section class="wrapper">
         <div class="paginacao">

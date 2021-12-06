@@ -201,7 +201,7 @@
     font-size: 2rem;
     color: #fff;
     width: 100%;
-    max-width: 20rem;
+    max-width: 22.5rem;
     text-align: center;
     transition: .3s all;
 }
@@ -227,7 +227,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 20rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     color: #fff;
     opacity: 0;

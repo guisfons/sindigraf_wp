@@ -16,44 +16,70 @@ get_header();
 <main>
     <section class="wrapper grupo-empresarial">
         <article>
-            <p> A ABIGRAF Regional São Paulo trabalha com o objetivo de associar indústrias gráficas de Pré Impressão, Impressão e Acabamento de todo Estado de São Paulo.</p>
+            <p><?php the_content(); ?></p>
         </article>
 
         <div class="grupo-empresarial-container">
-            <div class="grupo-empresarial-card">
-                <article>
-                    <p><strong>Grupo Empresarial do Setor de Cadernos</strong>(GE-CADE)</p>
-                </article>
-                <article class="grupo-empresarial-card-hidden">
-                    <p>Além de questões comuns ao setor gráfico, que incidem diretamente na produção e nas vendas internas, o GE-CADE está focado na exportação, seu principal mercado comprador. Por este motivo, suas ações são pautadas por pesquisas e análises de desempenho do setor caderneiro. </p>
-                    <hr>
-                    <span><strong>Diretor Setorial</strong>Beatriz Duckur Bignardi </span>
-                </article>
-            </div>
+            <?php
+            if (have_rows('cards')) :
+                while (have_rows('cards')) : the_row();
+            ?>
+                    <div class="grupo-empresarial-card">
+                        <article>
+                            <p><strong><?php echo get_sub_field('titulo'); ?></strong><?php echo get_sub_field('codigo'); ?></p>
+                        </article>
+                        <article class="grupo-empresarial-card-hidden">
+                            <p><?php echo get_sub_field('descricao'); ?></p>
+                            <hr>
+                            <span><strong><?php echo get_sub_field('setor'); ?></strong><?php echo get_sub_field('profissional'); ?></span>
+                        </article>
+                    </div>
+            <?php
+                endwhile;
+            endif;
+            ?>
         </div>
 
-        <h3>Grupos de trabalho</h3>
-
-        <div class="grupo-empresarial-container">
-            <div class="grupo-empresarial-card grupo-empresarial-card-trabalho">
-                <article>
-                    <p><strong>Grupo de Trabalho de Recursos Humanos</strong>(GT-RH)</p>
-                </article>
-                <article class="grupo-empresarial-card-hidden">
-                    <hr>
-                    <span><strong>Coordenador</strong>Francisco Matalobos</span>
-                    <hr>
-                </article>
-            </div>
-        </div>
-
+        <?php if( have_rows('grupos_trabalho') ): ?>
+            <?php while( have_rows('grupos_trabalho') ): the_row(); ?>
+                <h3><?php echo get_sub_field('titulo_da_secao'); ?></h3>
+                <div class="grupo-empresarial-container">
+                    <?php
+                        if( have_rows('cards_trabalho') ):
+                            while( have_rows('cards_trabalho') ) : the_row();
+                    ?>
+                    <div class="grupo-empresarial-card grupo-empresarial-card-trabalho">
+                        <article>
+                            <p><strong><?php echo get_sub_field('titulo'); ?></strong><?php echo get_sub_field('codigo'); ?></p>
+                        </article>
+                        <article class="grupo-empresarial-card-hidden">
+                            <hr>
+                            <span><strong><?php echo get_sub_field('setor'); ?></strong><?php echo get_sub_field('profissional'); ?></span>
+                            <hr>
+                        </article>
+                    </div>
+                    <?php
+                        endwhile;
+                        endif;
+                    ?>
+                </div>
+            <?php endwhile; ?>
+        <?php endif; ?>
+        
         <p class="beneficios-paragraph">
-            Para mais informações sobre os Grupos Empresariais, entre em contato:
-            <span>
-                <a href="tel:+551132324500">(11) – 3232-4500</a>
-                ou envie um e-mail
-                <a href="mailto:rcamilo@abigraf.org.br">rcamilo@abigraf.org.br</a>
-            </span>
+            <?php
+                $mais_informacoes = get_field('mais_informacoes');
+                if( $mais_informacoes ): 
+                    echo get_field('mais_informacoes_titulo');
+                    echo 
+                    '<span>
+                        <a class="telefone" href="tel:+' . get_sub_field('mais_informacoes_telefone') . '">' . get_sub_field('mais_informacoes_telefone') . '</a>
+                        ' . get_sub_field('mais_informacoes_descricao') . '
+                        <a href="mailto:' . get_sub_field('mais_informacoes_email') . '">' . get_sub_field('mais_informacoes_email') . '</a>
+                    </span>';
+                ?>
+                
+            <?php endif; ?>
         </p>
     </section>
 </main>

@@ -1,7 +1,7 @@
 <?php
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args = [
-    'post_type' => ['post', 'eventos'],
+    'post_type' => ['post', 'eventos', 'tv_abigraf'],
     'post_status' => 'publish',
     'posts_per_page' => 10,
     'order' => 'DESC',

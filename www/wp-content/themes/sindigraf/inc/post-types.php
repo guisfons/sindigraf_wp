@@ -154,6 +154,30 @@ function ks_register_post_types(){
 
 		),
 
+        'tv_abigraf' => array(
+            'labels' => array(
+                'name'               => __('TV Abigraf'),
+                'singular_name'      => __('TV Abigraf'),
+                'menu_name'          => __('TV Abigraf'),
+                'name_admin_bar'     => __('TV Abigraf'),
+                'add_new'            => __('Novo Video'),
+                'add_new_item'       => __('Novo Video'),
+                'new_item'           => __('Novo Video'),
+                'edit_item'          => __('Editar Video'),
+                'view_item'          => __('Ver Video'),
+                'all_items'          => __('Videos'),
+                'search_items'       => __('Procurar por Videos'),
+                'parent_item_colon'  => __('Videos pai:'),
+                'not_found'          => __('Nenhum Evento encontrado.'),
+                'not_found_in_trash' => __('Nenhum Evento encontrado na lixeira.')
+			),
+            'description' => __('TV Abigraf'),
+            'rest_base' =>'custom/videos',
+            'has_archive' => 'biblioteca/videos',
+            'supports'    => array('title'),
+
+		),
+
     );
 
     foreach ($posttypes as $posttype => $options) {

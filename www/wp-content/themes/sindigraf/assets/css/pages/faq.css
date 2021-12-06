@@ -9,6 +9,13 @@
     margin: 7.6rem 0 4.9rem;
 }
 
+.faq h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: #FA5B37;
+    margin: 0 0 4.9rem;
+}
+
 .faq .formulario-container {
     margin-bottom: 5rem;
 }

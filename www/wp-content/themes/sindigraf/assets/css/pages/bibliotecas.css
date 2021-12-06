@@ -14,7 +14,7 @@
     padding-top: 6rem;
 }
 
-.library-text {
+.library-text-box p  {
     font-size: 1.6rem;
     padding: 0 0 2rem;
     font-weight: bold;
@@ -66,11 +66,6 @@
 
 .depositions-text {text-align: center;font-size: 1.6rem;}
 
-.depositions-slider-item {
-    max-width: 92rem;
-    width: 100%;
-}
-
 .depositions-slider-box {
     display: flex;
     justify-content: center;
@@ -103,6 +98,14 @@
 
 .library-gallery figure:nth-child(odd) {
     margin-right: 3rem;
+}
+
+.depositions-slider-box button.slick-next.slick-arrow {
+    right: -5%;
+}
+
+.depositions-slider-box button.slick-prev.slick-arrow {
+    left: -5%;
 }
 
 @media(max-width: 769px) {

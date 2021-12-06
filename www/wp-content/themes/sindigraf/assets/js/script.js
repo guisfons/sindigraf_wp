@@ -59,5 +59,17 @@ $(document).ready(function (){
         $('.modal--active .modal-paginacao-item--active').text('0'+ativoItem);
     });
 
+    $('.slider-photos').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+
+    $('.depositions-slider-box').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+  
     $('.telefone').mask('(00)00000-0000');
 })

@@ -96,6 +96,8 @@
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 2rem;
+    display: block;
+    max-width: 6rem;
 }
 
 .eventos {

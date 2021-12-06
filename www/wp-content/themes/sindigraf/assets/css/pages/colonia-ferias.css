@@ -69,6 +69,11 @@
     text-align: center;
 }
 
+.slider-photos {
+    max-width: 63rem;
+    margin: 0 auto;
+}
+
 @media (max-width: 900px) {
     .recados-info {    
         flex-direction: column;
@@ -95,6 +100,8 @@
     margin-top: 1rem;
     font-size: 1.6rem;
     font-weight: 600;
+    display: block;
+    text-align: center;
 }
 
 .fotos-container img {
@@ -243,4 +250,39 @@
 
 .table tbody tr:not(:first-of-type) td {
     border-bottom: .1rem solid #2F5EBB;
+}
+
+button.slick-arrow {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    display: block;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+button.slick-next.slick-arrow {
+    right: -10%;
+    background-image: url('../../images/icons/Right.svg');
+}
+
+button.slick-prev.slick-arrow {
+    left: -10%;
+    background-image: url('../../images/icons/Left.svg');
+}
+
+@media(max-width: 426px) {
+    button.slick-prev.slick-arrow {
+        left: 5%;
+    }
+    button.slick-next.slick-arrow {
+        right: 5%;
+    }
 }

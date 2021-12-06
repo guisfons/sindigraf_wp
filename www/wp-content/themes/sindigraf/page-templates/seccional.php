@@ -8,8 +8,8 @@
 
 get_header();
 ?>
-<aside class="aside aside-large aside-bauru" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
-    <h2><?php echo get_field('titulo_da_pagina')?></h2>
+<aside class="aside <?php if(get_field( 'tamanho_aside' ) == 'grande') {echo 'aside-large';} ?>" style="background-image: url(<?php echo get_field('imagem_de_fundo'); ?>)">
+    <h2><?php get_field('titulo_aside'); ?></h2>
 </aside>
 <main>
     <section class="seccional wrapper">

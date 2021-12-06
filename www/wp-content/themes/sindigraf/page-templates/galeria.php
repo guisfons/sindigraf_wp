@@ -44,7 +44,7 @@ get_header();
                             $images = get_sub_field('galeria_slider');
                             if( $images ): ?>
                                 <?php foreach( $images as $image ): ?>
-                                    <img data-item="<?php echo $counter; ?>" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="" />
                                 <?php endforeach; ?>
                             <?php endif; ?>
                         </div>
@@ -58,19 +58,6 @@ get_header();
             endwhile;
         endif;
         ?>
-    </section>
-    <section class="wrapper">
-        <div class="paginacao">
-            <span class="paginacao-before"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow-paginacao.svg" alt=""></span>
-            <div class="paginacao-numeros">
-                <a class="paginacao-numero paginacao-numero--active" href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-            </div>
-            <span class="paginacao-after"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow-paginacao.svg" alt=""></span>
-        </div>
     </section>
 </main>
 

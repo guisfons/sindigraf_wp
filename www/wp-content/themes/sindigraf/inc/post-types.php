@@ -178,6 +178,75 @@ function ks_register_post_types(){
 
 		),
 
+        'apresentacoes' => array(
+            'labels' => array(
+                'name'               => __('Apresentações'),
+                'singular_name'      => __('Apresentações'),
+                'menu_name'          => __('Apresentações'),
+                'name_admin_bar'     => __('Apresentações'),
+                'add_new'            => __('Nova apresentação'),
+                'add_new_item'       => __('Nova apresentação'),
+                'new_item'           => __('Nova apresentação'),
+                'edit_item'          => __('Editar apresentação'),
+                'view_item'          => __('Ver apresentação'),
+                'all_items'          => __('Apresentações'),
+                'search_items'       => __('Procurar por apresentações'),
+                'parent_item_colon'  => __('Videos pai:'),
+                'not_found'          => __('Nenhuma apresentação encontrada.'),
+                'not_found_in_trash' => __('Nenhuma apresentação encontrada na lixeira.')
+			),
+            'description' => __('Apresentações'),
+            'rest_base' =>'custom/apresentacoes',
+            'has_archive' => 'biblioteca/apresentacoes',
+            'supports'    => array('title'),
+		),
+
+        'revistas' => array(
+            'labels' => array(
+                'name'               => __('Revistas'),
+                'singular_name'      => __('Revistas'),
+                'menu_name'          => __('Revistas'),
+                'name_admin_bar'     => __('Revistas'),
+                'add_new'            => __('Nova revista'),
+                'add_new_item'       => __('Nova revista'),
+                'new_item'           => __('Nova revista'),
+                'edit_item'          => __('Editar revista'),
+                'view_item'          => __('Ver revista'),
+                'all_items'          => __('Revistas'),
+                'search_items'       => __('Procurar por Revistas'),
+                'parent_item_colon'  => __('Videos pai:'),
+                'not_found'          => __('Nenhuma revista encontrada.'),
+                'not_found_in_trash' => __('Nenhuma revista encontrada na lixeira.')
+			),
+            'description' => __('Revistas'),
+            'rest_base' =>'custom/revistas',
+            'has_archive' => 'biblioteca/revistas',
+            'supports'    => array('title'),
+		),
+
+        'boletins' => array(
+            'labels' => array(
+                'name'               => __('Boletins'),
+                'singular_name'      => __('Boletins'),
+                'menu_name'          => __('Boletins'),
+                'name_admin_bar'     => __('Boletins'),
+                'add_new'            => __('Novo boletim'),
+                'add_new_item'       => __('Novo boletim'),
+                'new_item'           => __('Novo boletim'),
+                'edit_item'          => __('Editar boletim'),
+                'view_item'          => __('Ver boletim'),
+                'all_items'          => __('Boletins'),
+                'search_items'       => __('Procurar por Boletins'),
+                'parent_item_colon'  => __('Videos pai:'),
+                'not_found'          => __('Nenhumo boletim encontrada.'),
+                'not_found_in_trash' => __('Nenhumo boletim encontrada na lixeira.')
+			),
+            'description' => __('Boletins'),
+            'rest_base' =>'custom/Boletins',
+            'has_archive' => 'biblioteca/Boletins',
+            'supports'    => array('title'),
+		),
+
     );
 
     foreach ($posttypes as $posttype => $options) {

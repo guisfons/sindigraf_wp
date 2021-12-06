@@ -71,9 +71,9 @@ get_header();
                     echo get_field('mais_informacoes_titulo');
                     echo 
                     '<span>
-                        <a class="telefone" href="tel:+' . get_sub_field('mais_informacoes_telefone') . '">' . get_sub_field('mais_informacoes_telefone') . '</a>
-                        ' . get_sub_field('mais_informacoes_descricao') . '
-                        <a href="mailto:' . get_sub_field('mais_informacoes_email') . '">' . get_sub_field('mais_informacoes_email') . '</a>
+                        <a class="telefone" href="tel:+' . get_field('mais_informacoes_telefone') . '">' . get_field('mais_informacoes_telefone') . '</a>
+                        ' . get_field('mais_informacoes_descricao') . '
+                        <a href="mailto:' . get_field('mais_informacoes_e-mail') . '">' . get_field('mais_informacoes_e-mail') . '</a>
                     </span>';
                 ?>
                 

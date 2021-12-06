@@ -14,20 +14,28 @@ get_header();
 <main>
     <section class="wrapper apresentacoes">
         <?php
-            if( have_rows('card_apresentacoes') ):
-                while( have_rows('card_apresentacoes') ) : the_row();
-                ?>
+            $args = array(  
+                'post_type' => 'apresentacoes',
+                'post_status' => 'publish',
+                'posts_per_page' => 10, 
+                'orderby' => 'title', 
+                'order' => 'ASC',
+            );
+
+            $wp_query = new WP_Query( $args ); 
+                
+            while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
                 <div class="apresentacoes-card">
                     <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/document.svg" alt=""></figure>
                     <article>
-                        <span><?php echo get_sub_field('data'); ?></span>
-                        <p><?php echo get_sub_field('titulo'); ?></p>
+                        <span><?php the_date('d/m/Y'); ?></span>
+                        <p><?php the_title(); ?></p>
                     </article>
-                    <a target="_blank" href="<?php echo get_sub_field('arquivo'); ?>" download>Baixar</a>
+                    <a target="_blank" href="<?php echo get_field('arquivo_apresentacao'); ?>" download>Baixar</a>
                 </div>
-                <?php
-                endwhile;
-            endif;
+            <?php
+            endwhile;
+            wp_reset_postdata(); 
         ?>
         <div class="paginacao">
             <div class="paginacao-numeros">

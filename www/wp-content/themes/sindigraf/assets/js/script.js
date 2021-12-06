@@ -35,4 +35,17 @@ $(document).ready(function (){
         let ativoItem = $('.modal--active .modal-slider .slick-current').data('item');
         $('.modal--active .modal-paginacao-item--active').text('0'+ativoItem);
     });
+
+
+    $('.slider-photos').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+
+    $('.depositions-slider-box').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
 })

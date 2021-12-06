@@ -3,8 +3,6 @@
 /**
  * Template Name: Faq
  * Template Post Type: page
- *
- * @package UAU
  * @since 1.0.0
  */
 

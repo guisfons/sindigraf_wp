@@ -103,7 +103,7 @@ add_theme_support('post-thumbnails');
  * To enable featured images, the current theme must include
  * add_theme_support( 'post-thumbnails' ) and they will show the metabox 'featured image'
  */
-add_image_size('company-size', 162, 81, false );
+add_image_size('colonia', 670, 310, false );
 add_image_size('event-gallery', 490, 568, false );
 /*add_image_size('slide-large', 1366, 400, true );
 add_image_size('slide-extra-large', 2560, 749, true );*/

@@ -3,8 +3,6 @@
 /**
  * Template Name: Seccional - Interna
  * Template Post Type: page
- *
- * @package UAU
  * @since 1.0.0
  */
 

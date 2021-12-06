@@ -24,6 +24,8 @@
     font-size: 1.6rem;
     font-weight: 600;
     padding: 2.75rem 0;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 @media (max-width: 600px) {

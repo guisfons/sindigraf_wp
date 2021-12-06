@@ -39,14 +39,12 @@
     height: 16rem;
     margin: 0 auto 9.1rem;
     padding: 6.1rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
     color: #fff;
-
-    background-image: url(/images/sides/galeria-bg.png);
+    background-image: url(../../images/sides/galeria-bg.png);
     background-position: center;
     background-size: cover;
 }

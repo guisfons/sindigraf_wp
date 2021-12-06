@@ -33,6 +33,7 @@ get_header();
             <span>*campos obrigatórios</span>
             <input type="submit" value="Enviar">
         </form>
+        <?php echo do_shortcode('[contact-form-7 id="288" title="Fale conosco"]'); ?>
     </section>
 </main>
 

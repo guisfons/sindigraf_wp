@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-apresentacoes">
-    <h2>Apresentações</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper apresentacoes">
         <?php

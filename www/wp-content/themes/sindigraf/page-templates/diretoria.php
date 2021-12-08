@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-sindigraf">
-    <h2>DIRETORIA GESTÃO 2019-2022</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <?php if (have_rows('diretoria_informacoes')) : ?>
         <section class="diretoria">

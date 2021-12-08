@@ -8,9 +8,7 @@
     get_header();
 ?>
 
-<aside class="aside">
-    <h2>Notícias</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper header-input">
         <h3>Últimas notícias</h3>

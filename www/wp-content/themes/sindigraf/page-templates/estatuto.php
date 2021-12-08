@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-sindigraf">
-    <h2>Estatuto</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper estatuto">
         <h3>SINDICATO DAS INDÚSTRIAS GRÁFICAS NO ESTADO DE SÃO PAULO</h3>

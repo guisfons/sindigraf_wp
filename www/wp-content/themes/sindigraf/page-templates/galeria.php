@@ -9,9 +9,7 @@
 get_header();
 ?>
 
-<aside class="aside aside-galeria">
-    <h2>Galeria de Fotos</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper header-input">
         <h3>Palestra e Eventos</h3>
@@ -44,7 +42,7 @@ get_header();
                             $images = get_sub_field('galeria_slider');
                             if( $images ): ?>
                                 <?php foreach( $images as $image ): ?>
-                                    <img src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="" />
+                                    <img src="<?php echo esc_url($image); ?>" alt="" data-item="<?php echo $counter; ?>"/>
                                 <?php endforeach; ?>
                             <?php endif; ?>
                         </div>

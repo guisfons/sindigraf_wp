@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-faq">
-    <h2>PERGUNTAS FREQUENTES</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
 <?php get_template_part('template-parts/sections/content-accordeons') ?>
 </main>

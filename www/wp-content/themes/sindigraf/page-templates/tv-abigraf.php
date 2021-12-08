@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-comunicacao">
-    <h2>TV ABIGRAF</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper tv">
         <h3>DEPOIMENTOS, EVENTOS, TREINAMENTOS E PALESTRAS</h3>

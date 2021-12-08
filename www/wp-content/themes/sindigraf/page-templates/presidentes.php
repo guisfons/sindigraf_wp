@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-sindigraf">
-    <h2>Galeria de Presidentes</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <?php if (have_rows('galeria')) : ?>
         <section class="wrapper galeria-presidentes">

@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-servicos">
-    <h2>COLÔNIA DE FÉRIAS</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper colonia-ferias">
         <h3>PRAIA GRANDE | SP</h3>

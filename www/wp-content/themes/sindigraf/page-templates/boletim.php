@@ -90,20 +90,5 @@ get_header();
     endif;
     ?>
   </section>
-  <div class="paginacao">
-    <div class="paginacao-numeros">
-      <?php
-      $big = 999999999;
-      echo paginate_links(array(
-        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-        'format' => '?paged=%#%',
-        'current' => max(1, get_query_var('paged')),
-        'total' => $wp_query->max_num_pages,
-        'prev_text' => '<span class="paginacao-before"><img src="' . get_template_directory_uri() . '/assets/images/icons/arrow-paginacao.svg" alt=""></span>',
-        'next_text' => '<span class="paginacao-after"><img src="' . get_template_directory_uri() . '/assets/images/icons/arrow-paginacao.svg" alt=""></span>',
-      ));
-      ?>
-    </div>
-  </div>
 </main>
 <?php get_footer(); ?>

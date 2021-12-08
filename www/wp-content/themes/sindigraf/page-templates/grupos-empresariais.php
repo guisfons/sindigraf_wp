@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside">
-    <h2>Grupos empresariais</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper grupo-empresarial">
         <article>

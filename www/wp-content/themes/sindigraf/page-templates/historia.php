@@ -8,10 +8,7 @@
 
 get_header();
 ?>
-
-<aside class="aside">
-    <h2>História</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="historia">
         <div class="wrapper">

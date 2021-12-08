@@ -1,9 +1,21 @@
 <?php
 $class = '';
-$class = get_field('sindigraf') ? 'vantagens-sindigraf' : '';
-$class = get_field('biblioteca') ? 'library' : '';
+$size = get_field('tamanho_dos_itens');
+switch ($size) {
+    case 'salario':
+        $class = 'salary';
+        break;
+
+    case 'sindigraf ':
+        $class = 'vantagens-sindigraf';
+        break;
+    
+    case 'biblioteca  ':
+        $class = 'library';
+        break;
+}
 ?>
-<section class="blue-section vantagens <?php echo $class ?>">
+<section class="blue-section <?php echo $class ?>">
     <?php
     $title = get_field('titulo_card_sec_azul');
     if ($title) {
@@ -15,7 +27,7 @@ $class = get_field('biblioteca') ? 'library' : '';
         <div class="blue-section-wrapper">
             <?php while (have_rows('itens_cards_secao_azul')) : the_row(); ?>
                 <figure class="blue-section-item">
-                    <?php if (get_field('biblioteca')) : ?>
+                    <?php if ($size == 'biblioteca') : ?>
                         <p><?php echo get_sub_field('titulo_card'); ?></p>
                         <span><?php echo get_sub_field('texto_card'); ?></span>
                     <?php else : ?>

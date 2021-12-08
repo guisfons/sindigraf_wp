@@ -1,21 +1,13 @@
 <section class="eventos wrapper">
-    <h2 class="eventos-title">Eventos</h2>
     <?php
     $args = [
-        'numberposts' => 2,
+        'numberposts' => 6,
         'post_status' => 'publish',
         'post_type' => 'eventos'
     ];
-
-    $class = '';
-    // if (get_field('slider_de_eventos')) {
-    //     $args['numberposts'] = 6;
-    //     $class = 'eventos-box-slide';
-    // }
-
-
     ?>
-    <div class="eventos-box <?php echo $class?>">
+    <h2 class="eventos-title">Eventos</h2>
+    <div class="eventos-box">
         <?php
         $recent_posts = wp_get_recent_posts($args);
         foreach ($recent_posts as $current) :

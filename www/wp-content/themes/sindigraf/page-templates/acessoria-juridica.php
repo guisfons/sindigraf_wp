@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-juridica">
-    <h2>ASSESSORIA JURÍDICA</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper juridica">
         <article>

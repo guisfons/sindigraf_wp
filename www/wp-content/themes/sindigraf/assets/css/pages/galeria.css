@@ -144,11 +144,6 @@
     transform: translateY(-50%);
 }
 
-.modal .slick-next {
-    right: -6rem; 
-    transform: translateY(-50%) rotate(-180deg);
-}
-
 .modal-paginacao{
     margin: 3.7rem auto 3.6rem;
 }

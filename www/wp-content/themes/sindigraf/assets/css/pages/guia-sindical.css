@@ -98,9 +98,10 @@ p.union-guide-text {
 section.union-guide-actions {
     background-color: #E4F2FF;
     padding: 3rem 0 5rem;
+    margin-bottom: 10rem;
 }
 
-p.union-guide-action-text {
+.union-guide-actions p {
     font-size: 1.6rem;
     padding-bottom: 2rem;
     font-weight: bold;

@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside aside-servicoes">
-    <h2>PROJETO BIBLIOTECAS</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="library-banner wrapper">
         <h3>LEITURA PARA TODOS</h3>

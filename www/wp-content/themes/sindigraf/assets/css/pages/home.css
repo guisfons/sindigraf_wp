@@ -204,6 +204,7 @@
     max-width: 22.5rem;
     text-align: center;
     transition: .3s all;
+    text-decoration: none;
 }
 
 .boxes:hover .box-text {

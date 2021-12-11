@@ -9,9 +9,7 @@
 get_header();
 ?>
 
-<aside class="aside aside-comunicacao">
-    <h2>Revista Abigraf</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper revista-texto">
         <article>

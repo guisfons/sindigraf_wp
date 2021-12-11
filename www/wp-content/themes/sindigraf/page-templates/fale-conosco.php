@@ -9,9 +9,7 @@
 get_header();
 ?>
 
-<aside class="aside aside-fale-conosco">
-    <h2>Fale Conosco</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper fale-conosco-page">
         <form class="formulario-contato" action="">

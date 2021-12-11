@@ -8,9 +8,7 @@
 
 get_header();
 ?>
-<aside class="aside">
-    <h2>Missão E Objetivos</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="section-header-box">
         <div class="wrapper">

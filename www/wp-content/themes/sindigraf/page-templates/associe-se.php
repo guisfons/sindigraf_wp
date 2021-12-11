@@ -9,9 +9,7 @@
 get_header();
 ?>
 
-<aside class="aside">
-    <h2>Associe-se</h2>
-</aside>
+<?php get_template_part('template-parts/sections/content-aside'); ?>
 <main>
     <section class="wrapper associe-se">
         <article>

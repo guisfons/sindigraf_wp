@@ -27,19 +27,17 @@
     font-size: 0;
     background-color: transparent;
     border: none;
-    
-    background-image: url(../../images/icons/arrow-eventos.svg);
+    /* background-image: url(../../images/icons/arrow-eventos.svg); */
     background-size: contain;
     width: 2.55rem;
     height: 4.06rem;
-    
     position: absolute;
     top: 50%;
 }
 
 .eventos .slick-prev {
-    left: -7rem;
-    transform: translateY(-50%);
+    /* left: -7rem; */
+    /* transform: translateY(-50%); */
 }
 
 .eventos .slick-next {

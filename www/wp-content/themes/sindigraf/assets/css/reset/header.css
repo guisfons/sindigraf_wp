@@ -1,5 +1,5 @@
 .header {
-    padding-top: 4.5rem;
+    padding-top: 2rem;
 }
 
 .header::after {
@@ -27,7 +27,7 @@
     font-size: 1.8rem;
     display: flex;
     width: 14rem;
-    height: 5.4rem;
+    height: 4.5rem;
     align-items: center;
     padding: 0 0.9rem 0 2.3rem;
 }
@@ -50,6 +50,11 @@
 
 .image-abigraf {
     padding-right: 4.4rem;
+    height: 5rem;
+}
+
+.image-sidigraf {
+    height: 5rem;
 }
 
 .image-mobile {
@@ -63,9 +68,9 @@
     border-left: 0;
     border-right: 0;
     border-color: #FA5B37;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     width: 32rem;
-    height: 5rem;
+    height: 4rem;
 }
 
 .form-submit {
@@ -192,7 +197,7 @@ a.drop-down-link {
         display: block;
         
         height: 60px;
-        background-color: #DE1026;
+        background-color: #FA5B37;
     }
 
     .header-menu__mobile .wrapper{
@@ -238,7 +243,7 @@ a.drop-down-link {
 
     .nav {
         display: none;
-        background-color: #DE1026;
+        background-color: #FA5B37;
         padding: 17px 0 26px 32px;
 
         max-width: 375px;

@@ -59,7 +59,7 @@
 			<div class="header-brand">
 			<img class="image-abigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-abigraf-sp.png" alt="">
 			<img class="image-sidigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-sidigraf.png" alt="">
-			<img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-mobile.png" alt="">
+			<img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-sidigraf.png" alt="">
 			</div>
 			<form action="<?php echo home_url(); ?>" method="get" class="form">
 			<div class="form-box">

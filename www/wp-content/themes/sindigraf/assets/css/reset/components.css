@@ -44,7 +44,7 @@
 
 .eventos .slick-next {
     right: -7rem;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(0);
 }
 
 .evento-item {

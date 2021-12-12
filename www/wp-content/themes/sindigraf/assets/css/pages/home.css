@@ -289,3 +289,35 @@
 .parceiros {
     padding-bottom: 8rem;
 }
+
+@media (max-width: 900px) {
+    .associe-cards {
+        padding: 0;
+    }
+
+    .associe-cards-box {
+        margin: 0 auto;
+    }
+
+    .banco-emp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banco-emp-box {
+        width: 100%;
+        background-size: cover !important;
+    }
+
+    .box-global {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .boxes-pdf {
+        flex-direction: column;
+    }
+
+    .box-pdf-item {
+        max-width: 100%;
+    }
+}

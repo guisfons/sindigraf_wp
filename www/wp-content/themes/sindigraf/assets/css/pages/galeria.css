@@ -139,9 +139,17 @@
     z-index: 2;
 }
 
+.galeria .modal .slick-prev {
+    left: -6rem;
+}
+
 .modal .slick-prev {
     left: -6rem;
     transform: translateY(-50%);
+}
+
+.galeria .modal .slick-next {
+    right: -6rem;
 }
 
 .modal-paginacao{

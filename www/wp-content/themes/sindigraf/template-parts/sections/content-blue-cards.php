@@ -7,7 +7,7 @@ switch ($size) {
         break;
 
     case 'sindigraf ':
-        $class = 'vantagens-sindigraf';
+        $class = 'vantagens';
         break;
     
     case 'biblioteca  ':

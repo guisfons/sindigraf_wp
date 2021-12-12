@@ -25,7 +25,9 @@
                                 <span class="formulario-tab-button"></span>
                             </div>
                             <div class="formulario-form">
-                                <?php echo get_sub_field('conteudo_do_accordeon'); ?>
+                                <article>
+                                    <?php echo get_sub_field('conteudo_do_accordeon'); ?>
+                                </article>
                             </div>
                         </div>
                 <?php

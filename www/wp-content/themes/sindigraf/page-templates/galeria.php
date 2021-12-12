@@ -42,7 +42,7 @@ get_header();
                             $images = get_sub_field('galeria_slider');
                             if( $images ): ?>
                                 <?php foreach( $images as $image ): ?>
-                                    <img src="<?php echo esc_url($image); ?>" alt="" data-item="<?php echo $counter; ?>"/>
+                                    <img src="<?php echo esc_url($image); ?>" alt="" data-item="<?php echo $counter++; ?>"/>
                                 <?php endforeach; ?>
                             <?php endif; ?>
                         </div>
@@ -52,7 +52,7 @@ get_header();
                     </div>
                 </div>
             <?php
-            $counter++;
+            // $counter++;
             endwhile;
         endif;
         ?>

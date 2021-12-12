@@ -10,7 +10,7 @@ switch ($size) {
         $class = 'vantagens';
         break;
     
-    case 'biblioteca  ':
+    case 'biblioteca':
         $class = 'library';
         break;
 }

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Assesoria Juridica
+ * Template Name: Assessoria Juridica
  * Template Post Type: page
  * @since 1.0.0
  */

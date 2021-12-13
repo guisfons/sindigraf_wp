@@ -38,6 +38,10 @@
     line-height: 2.4rem;
 }
 
+.juridico-arquivos {
+    margin-top: 5rem;
+}
+
 .juridico-arquivos .input-select.input-anos {
     max-width: 22.5rem;
     margin-left: auto;

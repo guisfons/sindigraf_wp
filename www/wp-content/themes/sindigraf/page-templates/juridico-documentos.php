@@ -12,13 +12,7 @@ get_header();
   <section class="wrapper header-input">
     <h3><?php the_title(); ?></h3>
   </section>
-  <section class="wrapper boletim">
-    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-    <article>
-      <?php the_content(); ?>
-    </article>
-  </section>
-  <section class="wrapper boletim-arquivos">
+  <section class="wrapper juridico-arquivos">
     <div class="input-select input-anos">
       <form action="#" method="GET">
         <select class="input input-full" name="ano" id="select" onchange="this.form.submit()">

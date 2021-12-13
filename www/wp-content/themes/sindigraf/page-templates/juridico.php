@@ -18,8 +18,23 @@ get_header();
       <?php the_content(); ?>
     </article>
   </section>
-  <section class="wrapper juridico-arquivos">
-    
+  <section class="wrapper juridico-links">
+  <?php
+    if( have_rows('paginas') ):
+
+        while( have_rows('paginas') ) : the_row();
+
+            $titulo = get_sub_field('titulo');
+            $link = get_sub_field('link');
+
+            echo '<div class="juridico-link">
+              <span>' . $titulo . '</span>
+              <a href="' . $link . '"></a>
+            </div>';
+
+        endwhile;
+    endif;
+    ?>
   </section>
 </main>
 <?php get_footer(); ?>

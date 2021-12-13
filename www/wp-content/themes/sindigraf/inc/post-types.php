@@ -203,7 +203,7 @@ function ks_register_post_types(){
                 'search_items'       => __('Procurar por Jurídico'),
                 'parent_item_colon'  => __('Videos pai:'),
                 'not_found'          => __('Nenhumo post encontrada.'),
-                'not_found_in_trash' => __('Nenhumo post encontrada na lixeira.')m
+                'not_found_in_trash' => __('Nenhumo post encontrada na lixeira.')
 			),
             'description' => __('Jurídico'),
             'rest_base' =>'custom/Juridico',

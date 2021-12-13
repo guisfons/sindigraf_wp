@@ -16,3 +16,53 @@
     margin-top: 0;
     margin-bottom: 30vh;
 }
+
+/* Home */
+
+.juridico {
+    margin: 4.9rem auto 5.7rem;
+}
+
+.juridico img {
+    margin: 0 auto 6rem;
+}
+
+.juridico article {
+    white-space: pre-line;
+}
+
+.juridico article p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.juridico-arquivos .input-select.input-anos {
+    max-width: 22.5rem;
+    margin-left: auto;
+}
+
+.juridico-arquivos-container {
+    margin: 6.3rem 0 8.9rem;
+}
+
+.juridico-arquivos-container .apresentacoes-card a:last-of-type {
+    margin-left: 7.4rem;
+}
+
+
+@media (max-width: 900px) {
+    .juridico-arquivos-container .apresentacoes-card {
+        flex-wrap: wrap;
+    }
+
+    .juridico-arquivos-container .apresentacoes-card a:last-of-type {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .juridico-arquivos-container .apresentacoes-card a:last-of-type {
+        margin-left: auto;
+    }
+}

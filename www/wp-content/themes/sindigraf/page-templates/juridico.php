@@ -29,7 +29,7 @@ get_header();
 
             echo '<div class="juridico-link">
               <span>' . $titulo . '</span>
-              <a href="' . $link . '"></a>
+              <a href="' . $link . '">Saiba mais</a>
             </div>';
 
         endwhile;

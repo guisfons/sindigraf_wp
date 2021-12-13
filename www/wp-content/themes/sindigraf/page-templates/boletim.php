@@ -23,8 +23,7 @@ get_header();
       <form action="#" method="GET">
         <select class="input input-full" name="ano" id="select" onchange="this.form.submit()">
           <option selected value="">Todos os anos</option>
-          <option value="2021">Loren</option>
-          <option value="2020">Loren</option>
+          <option value="2021">2021</option>
         </select>
       </form>
     </div>

@@ -22,8 +22,7 @@ get_header();
             <div class="input-select">
                 <select class="input input-full" name="select" id="select">
                     <option selected value="">Área</option>
-                    <option value="">Loren</option>
-                    <option value="">Loren</option>
+                    <option value="">2021</option>
                 </select>
             </div>
             <input class="input input-full" placeholder="Assunto*" type="text" name="" id="">

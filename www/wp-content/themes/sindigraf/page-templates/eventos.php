@@ -64,8 +64,7 @@ get_header();
         <div class="input-select input-anos">
             <select class="input input-full" name="select" id="select">
                 <option selected value="">Todos os anos</option>
-                <option value="">Loren</option>
-                <option value="">Loren</option>
+                <option value="">2021</option>
             </select>
         </div>
     </section>

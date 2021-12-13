@@ -83,7 +83,7 @@
     margin: 7.4rem auto;
 }
 
-.formulario-container--active .formulario-form {
+.formulario-container--active .formulario-form, .formulario-container--active .formulario-container .hf-fields-wrap {
     height: fit-content;
     opacity: 1;
 }

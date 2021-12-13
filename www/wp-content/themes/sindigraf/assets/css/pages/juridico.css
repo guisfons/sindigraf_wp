@@ -23,8 +23,9 @@
     margin: 4.9rem auto 5.7rem;
 }
 
-.juridico img {
+.juridico > img {
     margin: 0 auto 6rem;
+    display: block;
 }
 
 .juridico article {

@@ -51,6 +51,33 @@
     margin-left: 7.4rem;
 }
 
+.juridico-links {
+    margin-bottom: 10rem;
+}
+
+.juridico-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.juridico-link span {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.juridico-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 4rem;
+    background-color: #0D4A82;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
 
 @media (max-width: 900px) {
     .juridico-arquivos-container .apresentacoes-card {

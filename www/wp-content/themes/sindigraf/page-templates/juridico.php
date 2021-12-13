@@ -19,7 +19,6 @@ get_header();
     </article>
   </section>
   <section class="wrapper juridico-arquivos">
-    
   </section>
 </main>
 <?php get_footer(); ?>

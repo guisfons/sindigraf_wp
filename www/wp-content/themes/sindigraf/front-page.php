@@ -53,7 +53,9 @@ get_header();
 	</section>
 	<?php get_template_part('template-parts/sections/content-last-news'); ?>
 	<section class="banco-emp wrapper-slider">
-		<div class="banco-emp-box banco-emp-left">
+		<iframe width="100%" height="265px" src="http://192.241.157.201/produtos-e-servicos/banco-de-empregos/#vagas" frameborder="0"></iframe>
+			
+		<!-- <div class="banco-emp-box banco-emp-left">
 			<h3 class="banco-emp-title">BANCO DE EMPREGOS</h3>
 			<figure class="banco-emp-icon-box">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/curriculum.svg" alt="" class="banco-emp-icon">
@@ -72,7 +74,7 @@ get_header();
 			<p class="banco-emp-login">Faça seu login e confira as oportunidades.</p>
 			<a href="#" class="banco-emp-search">Buscar por vagas</a>
 			<p class="banco-emp-sing-up">Não tem cadastro? Clique aqui e faça agora.</p>
-		</div>
+		</div> -->
 	</section>
 	<?php get_template_part('template-parts/sections/content-last-events'); ?>
 	<section class="tv wrapper">

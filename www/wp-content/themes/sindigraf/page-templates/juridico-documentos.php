@@ -40,10 +40,10 @@ get_header();
         array(
             'taxonomy' => 'category',
             'field'    => 'slug',
-            'terms'    => 'bob',
+            'terms'    => get_field('categoria_documento'),
         ),
     ),
-    ],;
+    ];
 
     if (!empty($_GET['ano'])) {
       $args['date_query'] = [

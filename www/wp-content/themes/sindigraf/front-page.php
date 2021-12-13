@@ -52,8 +52,9 @@ get_header();
 		<?php endif; ?>
 	</section>
 	<?php get_template_part('template-parts/sections/content-last-news'); ?>
-	<section class="banco-emp wrapper-slider">
-		<iframe width="100%" height="265px" src="http://192.241.157.201/produtos-e-servicos/banco-de-empregos/#vagas" frameborder="0"></iframe>
+	<section class="banco-emp wrapper-slider" style="display: block;">
+		<h3 class="eventos-title" style="color: #FA5B37;">Banco de empregos</h3>
+		<iframe width="100%" height="265px" src="http://192.241.157.201/produtos-e-servicos/banco-de-empregos/#vagas" frameborder="0" scrolling="no"></iframe>
 			
 		<!-- <div class="banco-emp-box banco-emp-left">
 			<h3 class="banco-emp-title">BANCO DE EMPREGOS</h3>

@@ -188,6 +188,28 @@ function ks_register_post_types(){
             'supports'    => array('title'),
 		),
 
+        'juridico' => array(
+            'labels' => array(
+                'name'               => __('Jurídico'),
+                'singular_name'      => __('Jurídico'),
+                'menu_name'          => __('Jurídico'),
+                'name_admin_bar'     => __('Jurídico'),
+                'add_new'            => __('Novo boletim'),
+                'add_new_item'       => __('Novo boletim'),
+                'new_item'           => __('Novo boletim'),
+                'edit_item'          => __('Editar boletim'),
+                'view_item'          => __('Ver boletim'),
+                'all_items'          => __('Jurídico'),
+                'search_items'       => __('Procurar por Jurídico'),
+                'parent_item_colon'  => __('Videos pai:'),
+                'not_found'          => __('Nenhumo boletim encontrada.'),
+                'not_found_in_trash' => __('Nenhumo boletim encontrada na lixeira.')
+			),
+            'description' => __('Jurídico'),
+            'rest_base' =>'custom/Juridico',
+            'has_archive' => 'biblioteca/Juridico',
+            'supports'    => array('title'),
+		),
     );
 
     foreach ($posttypes as $posttype => $options) {

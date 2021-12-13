@@ -209,7 +209,7 @@ function ks_register_post_types(){
             'rest_base' =>'custom/Juridico',
             'has_archive' => 'biblioteca/Juridico',
             'supports'    => array('title'),
-            'taxonomies'  => array( 'category-docs' ),
+            'taxonomies'  => array( 'category' ),
 		),
     );
 

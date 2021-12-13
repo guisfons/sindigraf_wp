@@ -38,7 +38,7 @@ get_header();
       'paged' => $paged,
       'tax_query' => array(
         array(
-            'taxonomy' => 'category-docs',
+            'taxonomy' => 'category',
             'field'    => 'slug',
             'terms'    => 'bob',
         ),

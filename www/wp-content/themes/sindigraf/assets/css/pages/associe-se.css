@@ -99,7 +99,7 @@
     cursor: pointer;
 }
 
-.formulario-form {
+.formulario-form, .formulario-container .hf-fields-wrap {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3.5rem;
@@ -111,7 +111,7 @@
 }
 
 
-.formulario-form h3 {
+.formulario-form h3, .formulario-container .hf-fields-wrap h3 {
     display: block;
     width: 100%;
     color: #FA5B37;
@@ -120,7 +120,7 @@
     font-weight: 700;
 }
 
-.formulario-form span {
+.formulario-form span, .formulario-container .hf-fields-wrap span {
     font-size: 1.2rem;
 }
 

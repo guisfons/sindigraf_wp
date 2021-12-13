@@ -5,7 +5,7 @@ $(document).ready(function (){
 
     // Slider Home
     $('.main-slider').slick({
-        arrows: false,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 2000,
     })

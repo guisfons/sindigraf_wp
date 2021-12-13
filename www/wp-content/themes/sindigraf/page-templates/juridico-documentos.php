@@ -63,8 +63,8 @@ get_header();
                 <span><?php the_date('d/m/Y'); ?></span>
                 <p><?php the_title(); ?></p>
               </article>
-              <a target="_blank" href="<?php echo get_field('arquivo_apresentacao'); ?>">Visualizar</a>
-              <a target="_blank" href="<?php echo get_field('arquivo_apresentacao'); ?>" download>Baixar</a>
+              <a target="_blank" href="<?php echo get_field('documento'); ?>">Visualizar</a>
+              <a target="_blank" href="<?php echo get_field('documento'); ?>" download>Baixar</a>
             </div>
             <?php
             endwhile;

@@ -21,8 +21,6 @@ get_header();
   <section class="wrapper juridico-arquivos">
     <?php
     $args = array(
-      'post_type'      => 'juridico',
-      'posts_per_page' => -1,
       'post_parent'    => $post->ID,
       'order'          => 'ASC',
       'orderby'        => 'menu_order'

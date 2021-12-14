@@ -8,12 +8,7 @@
 
 get_header();
 ?>
-<style>
-    body {
-        overflow-y: hidden;
-    }
-</style>
 <main>
-    <iframe width="100%" height="100%" src="https://spmidiahost.com.br/jobs-abrigaf" frameborder="0"></iframe>
+    <iframe width="100%" style="min-height: 100vh;" src="http://192.241.157.201/login" frameborder="0"></iframe>
 </main>
 <?php get_footer(); ?>

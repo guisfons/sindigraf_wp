@@ -49,9 +49,12 @@
                 $date = explode('/', $date);
 
                 $dateFormated = "$date[0] de $date[1] de $date[2]";
+
+                $category = get_the_category(get_the_ID());
+                $category = (count($category))? $category[0]->name: '';
             ?>
                 <div class="noticia-card">
-                    <span>POLÍTICA</span>
+                    <span><?php echo $category; ?></span>
                     <article>
                         <span><?php echo $dateFormated; ?></span>
                         <h4><?php echo get_the_title(); ?></h4>

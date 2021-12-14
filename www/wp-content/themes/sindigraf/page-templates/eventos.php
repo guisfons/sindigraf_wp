@@ -41,7 +41,7 @@ get_header();
             ?>
                 <div class="calendario-eventos-card">
                     <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/calendario-icon.svg" alt=""><?php echo $date; ?></span>
-                    <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clock.svg" alt=""><?php echo get_field('hora_de_inicio', $events['ID']); ?> às <?php echo get_field('hora_de_termino', $events['ID']); ?></span>
+                    <!-- <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clock.svg" alt=""><?php echo get_field('hora_de_inicio', $events['ID']); ?> às <?php echo get_field('hora_de_termino', $events['ID']); ?></span> -->
                     <h4><?php echo get_the_title($events['ID']); ?></h4>
                     <a href="<?php echo get_permalink($events['ID']); ?>">Veja mais detalhes</a>
                 </div>

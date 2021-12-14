@@ -6,11 +6,11 @@ switch ($size) {
         $class = 'salary';
         break;
 
-    case 'sindigraf ':
-        $class = 'vantagens-sindigraf';
+    case 'sindigraf':
+        $class = 'vantagens';
         break;
     
-    case 'biblioteca  ':
+    case 'biblioteca':
         $class = 'library';
         break;
 }

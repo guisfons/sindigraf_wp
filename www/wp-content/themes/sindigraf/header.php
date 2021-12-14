@@ -57,9 +57,9 @@
 		</div>
 		<div class="header-bottom">
 			<div class="header-brand">
-			<img class="image-abigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-abigraf-sp.png" alt="">
-			<img class="image-sidigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-sidigraf.png" alt="">
-			<img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-sidigraf.png" alt="">
+			<a href="<?php echo home_url(); ?>"><img class="image-abigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-abigraf-sp.png" alt=""></a>
+			<a href="<?php echo home_url(); ?>"><img class="image-sidigraf" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-sidigraf.png" alt=""></a>
+			<a href="<?php echo home_url(); ?>"><img class="image-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/sides/logo-sidigraf.png" alt=""></a>
 			</div>
 			<form action="<?php echo home_url(); ?>" method="get" class="form">
 			<div class="form-box">

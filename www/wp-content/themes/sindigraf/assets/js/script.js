@@ -27,7 +27,7 @@ $(document).ready(function (){
     })
 
     $('.formulario-tab').on('click', function () {
-        $('.formulario-container').toggleClass('formulario-container--active');
+        $(this).parent().toggleClass('formulario-container--active');
     });
 
     // Galeria modal

@@ -2,6 +2,11 @@
 get_header();
 ?>
 <main>
+	<div style="position: fixed; top: 0; left: 0;">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/imges/logo-bg-abigraf.png" alt="">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/imges/logo-bg-sindigraf.png" alt="">
+		<p>Site em manutenção</p>
+	</div>
 	<section class="main-slider wrapper-slider">
 		<?php if (have_rows('slider')) : ?>
 			<?php while (have_rows('slider')) : the_row();

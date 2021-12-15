@@ -61,7 +61,7 @@ get_header();
 			</figure>
 			<p class="banco-emp-type">SOU CANDIDATO</p>
 			<p class="banco-emp-login">Faça seu login e confira as oportunidades.</p>
-			<a href="/iframe" class="banco-emp-search">Buscar por vagas</a>
+			<a href="http://192.241.157.201/login" target="_blank" class="banco-emp-search">Buscar por vagas</a>
 			<p class="banco-emp-sing-up">Não tem cadastro? Clique aqui e faça agora.</p>
 		</div>
 		<div class="banco-emp-box banco-emp-right">
@@ -71,7 +71,7 @@ get_header();
 			</figure>
 			<p class="banco-emp-type">SOU EMPRESA</p>
 			<p class="banco-emp-login">Faça seu login e confira as oportunidades.</p>
-			<a href="/iframe" class="banco-emp-search">Buscar por vagas</a>
+			<a href="http://192.241.157.201/login" target="_blank" class="banco-emp-search">Buscar por vagas</a>
 			<p class="banco-emp-sing-up">Não tem cadastro? Clique aqui e faça agora.</p>
 		</div>
 	</section>

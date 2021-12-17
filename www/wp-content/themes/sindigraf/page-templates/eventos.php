@@ -45,7 +45,10 @@ get_header();
                     <h4><?php echo get_the_title($events['ID']); ?></h4>
                     <a href="<?php echo get_permalink($events['ID']); ?>">Veja mais detalhes</a>
                 </div>
-            <?php endforeach ?>
+            <?php
+            endforeach;
+            wp_reset_query();
+            ?>
         </div>
 
         <!-- <h3>Agosto <br> <span>2021</span></h3>
@@ -136,14 +139,14 @@ get_header();
                     <article>
                         <h4><?php echo get_the_title(); ?></h4>
                         <p><?php
-                        
-                        if($endDate < date('d/m/Y')){
-                            echo 'Evento encerrado';
-                        } else {
-                            echo 'Inscrições encerradas';
-                        }
-                        
-                        ?></p>
+
+                            if ($endDate < date('d/m/Y')) {
+                                echo 'Evento encerrado';
+                            } else {
+                                echo 'Inscrições encerradas';
+                            }
+
+                            ?></p>
                     </article>
                     <a href="<?php echo get_permalink(); ?>">Leia +</a>
                 </div>

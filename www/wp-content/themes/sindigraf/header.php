@@ -53,7 +53,7 @@
 		<div class="wrapper header-menu__top">
 		<div class="header-top">
 			<p class="header-brand-text">Portal da Indústria Gráfica Paulista. Juntos somos mais fortes!</p>
-			<a href="http://192.241.157.201/login" target="_blank" class="header-login">Login <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/User.svg" alt=""></a>
+			<a href="<?php echo get_field('url_de_login', 'option'); ?>" target="_blank" class="header-login">Login <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/User.svg" alt=""></a>
 		</div>
 		<div class="header-bottom">
 			<div class="header-brand">

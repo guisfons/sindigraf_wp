@@ -2,11 +2,11 @@
 get_header();
 ?>
 <main>
-	<div style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: #fff;z-index: 9999;display: flex;flex-direction: column;justify-content: center;row-gap: 2rem;align-items: center;font-size: 3rem;text-transform: uppercase;">
+	<!-- <div style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: #fff;z-index: 9999;display: flex;flex-direction: column;justify-content: center;row-gap: 2rem;align-items: center;font-size: 3rem;text-transform: uppercase;">
 		<p>Site em manutenção</p>
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/logo-bg-abigraf.png" alt="">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/logo-bg-sindigraf.png" alt="">
-	</div>
+	</div> -->
 	<section class="main-slider wrapper-slider">
 		<?php if (have_rows('slider')) : ?>
 			<?php while (have_rows('slider')) : the_row();

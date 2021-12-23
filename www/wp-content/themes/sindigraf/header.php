@@ -14,7 +14,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="publisher" content="guilhermesfonsecaa@gmail.com">
-	
+	<script
+		type="text/javascript"
+		src="https://app.termly.io/embed.min.js"
+		data-auto-block="on"
+		data-website-uuid="3131a3f0-6bd7-4c07-8256-fd6505a65623"
+	></script>
 	<?php
 
 		get_template_part('template-parts/header/seo');
@@ -36,7 +41,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
-
 </head>
 
 <body <?php body_class($post->post_name ?? ''); ?>>

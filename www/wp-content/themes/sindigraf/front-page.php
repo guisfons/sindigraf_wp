@@ -67,7 +67,7 @@ get_header();
 			<p class="banco-emp-type">SOU CANDIDATO</p>
 			<p class="banco-emp-login">Faça seu login e confira as oportunidades.</p>
 			<a href="http://192.241.157.201/login" target="_blank" class="banco-emp-search">Buscar por vagas</a>
-			<p class="banco-emp-sing-up">Não tem cadastro? Clique aqui e faça agora.</p>
+			<p class="banco-emp-sing-up">Não tem cadastro? <a href="http://192.241.157.201/candidates/new">Clique aqui e faça agora.</a></p>
 		</div>
 		<div class="banco-emp-box banco-emp-right">
 			<h3 class="banco-emp-title">BANCO DE EMPREGOS</h3>
@@ -77,7 +77,7 @@ get_header();
 			<p class="banco-emp-type">SOU EMPRESA</p>
 			<p class="banco-emp-login">Faça seu login e confira as oportunidades.</p>
 			<a href="http://192.241.157.201/login" target="_blank" class="banco-emp-search">Buscar por vagas</a>
-			<p class="banco-emp-sing-up">Não tem cadastro? Clique aqui e faça agora.</p>
+			<p class="banco-emp-sing-up">Não tem cadastro? <a href="http://192.241.157.201/companies/new">Clique aqui e faça agora.</a></p>
 		</div>
 	</section>
 	<?php get_template_part('template-parts/sections/content-last-events'); ?>

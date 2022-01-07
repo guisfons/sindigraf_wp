@@ -33,11 +33,11 @@
                 <div class="evento-header">
                     <span class="evento-date">
                         <img class="evento-calendar" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/calendario.svg" alt="">
-                        <?php echo get_field('data_de_inicio'); ?> a <?php echo get_field('data_de_termino'); ?>
+                        <?php echo get_field('data_de_inicio', $current['ID']); ?> a <?php echo get_field('data_de_termino', $current['ID']); ?>
                     </span>
                     <span class="evento-time">
                         <img class="evento-clock" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/relogio.svg" alt="">
-                        <?php echo get_field('hora_de_inicio'); ?> às <?php echo get_field('hora_de_termino'); ?>
+                        <?php echo get_field('hora_de_inicio', $current['ID']); ?> às <?php echo get_field('hora_de_termino', $current['ID']); ?>
                     </span>
                 </div>
                 <a href="<?php echo get_the_permalink($current['ID']); ?>" class="evento-link"><?php echo $current['post_title']; ?></a>

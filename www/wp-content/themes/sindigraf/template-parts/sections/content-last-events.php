@@ -35,10 +35,12 @@
                         <img class="evento-calendar" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/calendario.svg" alt="">
                         <?php echo get_field('data_de_inicio', $current['ID']); ?> a <?php echo get_field('data_de_termino', $current['ID']); ?>
                     </span>
-                    <span class="evento-time">
-                        <img class="evento-clock" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/relogio.svg" alt="">
-                        <?php echo get_field('hora_de_inicio', $current['ID']); ?> às <?php echo get_field('hora_de_termino', $current['ID']); ?>
-                    </span>
+                    <?php if(get_field('hora_de_inicio', $current['ID'])): ?>
+                        <span class="evento-time">
+                            <img class="evento-clock" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/relogio.svg" alt="">
+                            <?php echo get_field('hora_de_inicio', $current['ID']); ?> às <?php echo get_field('hora_de_termino', $current['ID']); ?>
+                        </span>
+                    <?php endif; ?>
                 </div>
                 <a href="<?php echo get_the_permalink($current['ID']); ?>" class="evento-link"><?php echo $current['post_title']; ?></a>
                 <a href="<?php echo get_the_permalink($current['ID']); ?>" class="evento-see">Leia +</a>

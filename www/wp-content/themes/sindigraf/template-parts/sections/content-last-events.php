@@ -3,7 +3,7 @@
     $args = [
         'numberposts' => 6,
         'post_status' => 'publish',
-        'post_type' => 'eventos'
+        'post_type' => 'eventos',
     ];
     ?>
     <h2 class="eventos-title">Eventos</h2>
@@ -23,11 +23,11 @@
                 <div class="evento-header">
                     <span class="evento-date">
                         <img class="evento-calendar" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/calendario.svg" alt="">
-                        20/09 a 23/09
+                        <?php echo get_sub_field('data_de_inicio'); ?> a <?php echo get_sub_field('data_de_termino'); ?>
                     </span>
                     <span class="evento-time">
                         <img class="evento-clock" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/relogio.svg" alt="">
-                        19h às 21h30
+                        <?php echo get_sub_field('hora_de_inicio'); ?> às <?php echo get_sub_field('hora_de_termino'); ?>
                     </span>
                 </div>
                 <a href="<?php echo get_the_permalink($current['ID']); ?>" class="evento-link"><?php echo $current['post_title']; ?></a>

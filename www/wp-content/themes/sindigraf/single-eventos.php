@@ -14,7 +14,9 @@
                     $date = $date[0] . '/' . $date[1];
                     ?>
                     <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/calendario-icon.svg" alt=""><?php echo $date; ?></span>
-                    <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clock.svg" alt=""><?php echo get_field('hora_de_inicio'); ?> às <?php echo get_field('hora_de_termino'); ?></span>
+                    <?php if(get_field('hora_de_inicio')): ?>
+                        <span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/clock.svg" alt=""><?php echo get_field('hora_de_inicio'); ?> às <?php echo get_field('hora_de_termino'); ?></span>
+                    <?php endif; ?>
                 </div>
 
                 <article>

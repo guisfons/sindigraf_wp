@@ -4,6 +4,14 @@
         'numberposts' => 6,
         'post_status' => 'publish',
         'post_type' => 'eventos',
+        'meta_query' => [
+            [
+                'key' => 'data_de_inicio',
+                'value' => date('Ymd'),
+                'type' => 'DATE',
+                'compare' => '>=',
+            ]
+            ],
     ];
     ?>
     <h2 class="eventos-title">Eventos</h2>
@@ -13,6 +21,8 @@
         foreach ($recent_posts as $current) :
             $category = get_the_category($current['ID']);
             $category = (count($category)) ? $category[0]->name : '';
+            $date = explode('/', get_field('data_de_inicio', $current['ID']));
+            $date = $date[0] . '/' . $date[1];
 
             /**
              * @todo Passar as datas para acf

@@ -73,3 +73,12 @@ $(document).ready(function (){
   
     $('.telefone').mask('(00) 0000-0000');
 })
+
+
+document.querySelectorAll('.tv-card').forEach(e => {
+    
+    const currentLink = e.querySelector('.sby_video_thumbnail'),
+    currentImage = currentLink.getAttribute('data-full-res');
+    e.querySelector('.sb_youtube').style.backgroundImage = "url('"+currentImage+"')";
+  
+});

@@ -15,7 +15,7 @@ get_header();
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = [
-            'post_type' => 'tv_abigraf',
+            'post_type' => 'sby_videos',
             'post_status' => 'publish',
             'posts_per_page' => 8,
             'order' => 'DESC',
@@ -35,9 +35,9 @@ get_header();
             <div class="tv-container">
                 <?php while ($wp_query->have_posts()) : the_post(); ?>
                     <div class="tv-card">
-                        <span><?php echo get_field('data'); ?></span>
+                        <span><?php echo get_the_date(); ?></span>
                         <article>
-                            <iframe width="560" height="315" src="<?php echo get_field('url_do_video'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <?php the_content(); ?>
                             <h4><?php echo get_the_title(); ?></h4>
                         </article>
                     </div>

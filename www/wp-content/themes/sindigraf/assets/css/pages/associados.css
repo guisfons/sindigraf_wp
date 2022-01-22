@@ -16,3 +16,10 @@ section.associados {
     max-height: 290rem;
     column-count: 2;
 }
+
+@media(max-width: 426px) {
+    section.associados {
+        column-count: 1;
+        max-height: unset;
+    }
+}

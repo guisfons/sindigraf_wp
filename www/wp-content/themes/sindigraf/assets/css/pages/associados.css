@@ -10,10 +10,11 @@
 
 .associados-nome {
     font-size: 1.6rem;
+    font-weight: 400;
 }
 
 section.associados {
-    max-height: 290rem;
+    /* max-height: 290rem; */
     column-count: 2;
 }
 

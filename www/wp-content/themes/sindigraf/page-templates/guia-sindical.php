@@ -19,7 +19,7 @@ get_header();
                         <p class="union-guide-item-title"><?php echo get_sub_field('titulo_card'); ?></p>
                         <img src="<?php echo get_sub_field('icone_do_card'); ?>" alt="" class="union-guide-icon">
                         <p class="unio-guide-item-text"><?php echo get_sub_field('texto_do_card'); ?></p>
-                        <a href="<?php echo get_sub_field('link_de_redirecionamento'); ?>" class="union-guide-btn"><?php echo get_sub_field('texto_do_link'); ?></a>
+                        <a href="<?php echo get_sub_field('link_de_redirecionamento'); ?>" class="union-guide-btn" target="_blank"><?php echo get_sub_field('texto_do_link'); ?></a>
                     </div>
                 <?php endwhile; ?>
             </div>

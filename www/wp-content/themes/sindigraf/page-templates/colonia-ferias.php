@@ -64,14 +64,15 @@ get_header();
             </article>
             <?php if(have_rows('tabela_reserva')):?>
             <table class="table">
+                <?php while(have_rows('tabela_reserva')): the_row(); ?>
                 <thead>
                     <tr>
                         <td>
-                            <h4>Conveniados e Convidados:</h4>
+                            <h4><?php echo get_sub_field('titulo'); ?></h4>
                         </td>
                     </tr>
                     <tr>
-                        <td><span>(Vigência: Fevereiro/2020)</span></td>
+                        <td><span><?php echo get_sub_field('subtitulo'); ?></span></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -80,13 +81,11 @@ get_header();
                         <td>Alta estação*</td>
                         <td>Baixa estação*</td>
                     </tr>
-                    <?php while(have_rows('tabela_reserva')): the_row(); ?>
                     <tr>
                         <td><?php echo get_sub_field('descricao'); ?></td>
                         <td><?php echo get_sub_field('alta_estacao'); ?></td>
                         <td><?php echo get_sub_field('baixa_estacao'); ?></td>
                     </tr>
-                    <?php endwhile;?>
                 </tbody>
                 <tfoot>
                     <tr>
@@ -96,6 +95,7 @@ get_header();
                         <td>*Alta Estação: Dezembro/Janeiro/Fevereiro e Feriados</td>
                     </tr>
                 </tfoot>
+                <?php endwhile;?>
             </table>
             <?php endif; ?>
         </div>

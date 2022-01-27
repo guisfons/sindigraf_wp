@@ -68,11 +68,11 @@ get_header();
                 <thead>
                     <tr>
                         <td>
-                            <h4><?php echo get_sub_field('titulo'); ?></h4>
+                            <h4><?php echo get_field('titulo_tabela'); ?></h4>
                         </td>
                     </tr>
                     <tr>
-                        <td><span><?php echo get_sub_field('subtitulo'); ?></span></td>
+                        <td><span><?php echo get_field('subtitulo_tabela'); ?></span></td>
                     </tr>
                 </thead>
                 <tbody>
